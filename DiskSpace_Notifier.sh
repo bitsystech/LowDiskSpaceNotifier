@@ -10,8 +10,8 @@
 
 # set variable
 leftover=$(df -h /Volumes/MacHD | sed -n 2p | awk '{print $4}' | sed 's/\(.*\)../\1/')
-CD="/usr/local/HMUtils/CocoaDialog.app/Contents/MacOS/CocoaDialog"
-BHT="/usr/local/HMUtils/BigHonkingText"
+CD="/usr/local/XWSUtils/CocoaDialog.app/Contents/MacOS/CocoaDialog"
+BHT="/usr/local/XWSUtils/BigHonkingText"
 consoleuser=`ls -l /dev/console | cut -d " " -f4`
 # Show a notification here with OK button via Finder
 # add it in Daily Periodic Job
@@ -20,7 +20,7 @@ consoleuser=`ls -l /dev/console | cut -d " " -f4`
 # First Release so holding on BIGTexts
 #if [[ ${leftover} -lt 5 ]]; then
 
-#sudo -u "${consoleuser}" /usr/local/HMUtils/BigHonkingText "Less than 5GB of space is left on this Mac" -w 92% -h 10% -p 5
+#sudo -u "${consoleuser}" /usr/local/XWSUtils/BigHonkingText "Less than 5GB of space is left on this Mac" -w 92% -h 10% -p 5
 
 #elif [[ leftover -lt 10 ]]; then
 
